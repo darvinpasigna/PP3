@@ -1,0 +1,264 @@
+
+
+
+
+/* Navbar */
+.navbar {
+    form {
+        padding: 20px;
+          /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none; /* remove underline from anchors */
+    
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  .sign6 {
+    background-color: darkblue;
+    color: white;
+  }
+  
+    }
+    .container {
+        background: rgba(0, 0, 139, 0.884);
+        display: block;
+     
+        #cart {
+            display: none;
+            color: whitesmoke;
+        }
+       span {
+        background: white;
+       }
+        select {
+            border: none;
+            box-shadow: none;
+            padding: 0 30px 0 0;
+            
+        }
+    
+    }
+    .sign {
+       width: 100%;
+       height: 50px;
+       .dropdown {
+        float: right;
+      form {
+        position: relative;
+      }
+       }
+       #remember {
+        color: black;
+        font-weight: normal;
+        margin-left: 40px;
+       }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 20px 20px 0;
+            font-weight: 600;
+        }
+        a:hover {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #sign5 {
+            width: 400px;
+
+        }
+    }
+   .row {
+    width: 100%;
+   }
+    .menu1>a {
+        margin-right: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke; 
+        padding: 10px;
+    }
+    .navbar-brand:hover {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        background: linear-gradient(#49108B,#392467,#49108B);
+    }
+   .prof {
+    width: 220px;
+    a {
+        color: whitesmoke;
+        float: right;
+    }
+    svg {
+        margin-left: 25px;
+    }
+    svg:hover {
+        width: 40px;
+        height: 40px;
+    }
+   }  
+}
+
+.fixed-bottom {
+  text-align: center;
+  display: none;
+    a {
+        text-decoration: none;
+        color: black;
+        svg:hover {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+}
+/* Navbar end */
+
+/* section */
+    .carousel {
+        width: 100%;
+        height: 600px;
+        img {
+            width: 100%;
+            height: 600px;
+        }
+    }
+    .topsales {
+        width: 100%;
+        display: flex;
+        h6 {
+            font-size: 10px;
+        }
+        p {
+            font-size: 9px;
+        }
+        .checked {
+            color: orange;
+            font-size: 10px;
+          }
+          img {
+            width: 100%;
+          }
+          .card:hover {
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.673);
+          }
+    }
+
+
+
+article {
+    width: 100%;
+  margin-bottom: 10px;
+    .promo {
+        display: flex; 
+        .card:hover {
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.673);
+         
+        }
+    }  
+    .price {
+        margin-top: 16px;
+    }
+   
+}
+footer {
+   
+    background: #392467;
+    width: 100%;
+    padding: 20px;
+    .subscribe {
+        background: rgba(18, 18, 18, 0.847);
+        border-radius: 20px;
+        padding: 10px;
+        h4, h6 {
+            color: white;
+        }
+    }
+    .menu2 a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    .icon svg {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .icon {
+        color: black;
+    }
+   .input-group-append {
+    button {
+        background: lightslategray;
+    }
+    button:hover {
+        background: rgb(201, 210, 219);
+    }
+   } 
+  
+}
+.copy {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background: black;
+}
+
+/* section end */
+
+@media only screen and (max-width: 768px) {
+
+   .menu1, .prof {
+    display: none;
+   }
+   #cart {
+    display: inline-block !important;
+    margin-left: 20px;
+   }
+   #cart>svg:hover {
+    width: 40px;
+    height: 40px;
+   }
+   .fixed-bottom {
+    display: flex;
+    a {
+        padding: 10px 80px 20px 20px;
+    }
+   }
+   footer {
+    display: block;
+    text-align: center;
+    .menu2, .icon, .subscribe, .modal {
+        padding: 20px;
+    }
+   }
+   .card {
+    margin-bottom: 10px;
+   }
+}
