@@ -213,14 +213,6 @@ footer {
     .icon {
         color: black;
     }
-   .input-group-append {
-    button {
-        background: lightslategray;
-    }
-    button:hover {
-        background: rgb(201, 210, 219);
-    }
-   } 
   
 }
 .copy {
