@@ -1,0 +1,18 @@
+
+#item1 {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+   .darkgrey1 {
+    margin-right: 30px;
+   }
+   border: 1px solid black;
+  
+}
+.checkout {
+    background: rgba(134, 134, 163, 0.785);
+    border-radius: 10px;
+    form {
+        padding: 20px;
+    }
+   }
