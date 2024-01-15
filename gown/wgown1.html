@@ -20,10 +20,10 @@
           <div class="row">
               <div class="col-md-5"> 
                   <div class="menu1">
-                    <a href="/index.html" class="logo"><img src="/IMG/Snip - Layouts LOGO.com - Google Chrome-fotor-2024011216820.png" alt="logo"></a>
-                    <a class="navbar-brand" href="/login.html">HOME</a>
-                    <a class="navbar-brand" href="/abou.html">ABOUT US</a>
-                    <a class="navbar-brand" href="/contact.html">CONTACT US</a>
+                    <a href="/menu/login.html" class="logo"><img src="/IMG/Snip - Layouts LOGO.com - Google Chrome-fotor-2024011216820.png" alt="logo"></a>
+                    <a class="navbar-brand" href="/menu/login.html">HOME</a>
+                    <a class="navbar-brand" href="/menu/contact.html">ABOUT US</a>
+                    <a class="navbar-brand" href="/menu/about.html">CONTACT US</a>
               </div>
           </div>
               <div class="col-md-5" id="search">
@@ -42,7 +42,7 @@
                   <div class="input-group-append">
                     <button class="btn btn-primary" type="button">Search</button>
                   </div>
-                  <a href="#" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                  <a href="/cart/cart2.html" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
                   </svg></a>
               </div>
@@ -62,7 +62,7 @@
                         </ul>
                     </div>
                   
-                          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                          <a href="/cart/cart2.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
                           </svg></a>
         
@@ -114,9 +114,90 @@
                     <label for="quantity">Quantity:</label>
                     <input type="number" id="quantity" name="quantity" min="1" max="10">
                     <br><br>
-                    <button class="form-control btn btn-primary">ADD TO CART</button><br><br><button class="form-control btn btn-primary">BUY NOW</button>
+                    <a href="#" type="button" class="form-control btn btn-primary" data-bs-toggle="modal" data-bs-target="#addcart">ADD TO CART</a>
+                   <br><br>
+                    <button type="button" class="form-control btn btn-primary" data-bs-toggle="modal" data-bs-target="#buy" >BUY NOW</button>
                     </form>
-                    
+                    <!-- add to cart -->
+                    <div class="modal" tabindex="-1" id="addcart">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Item succeessfully added to your cart.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="/menu/login.html"><button type="button" class="btn btn-primary">Continue shopping</button></a>
+                            <a href="/cart/cart2.html"><button type="button" class="btn btn-success">Go to cart</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- buy now -->
+                    <div class="modal" tabindex="-1" id="buy" style="padding: 20px;">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Place Order</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="padding-left: 20px;">
+                            <strong>Delivery Address:</strong><p>Darvin Pasigna
+                              (09757367195) <br>
+                              Tugbungan, Zamboanga City</p>
+                              <strong>Receive by:</strong> January 21-24 <br>
+                              <br>
+                              <div class="d-flex">
+                                <h6 style="margin-right: 84px;">1. Dark Grey Blackout Curtains (1 item)</h6> 
+                              <strong>&#8369;8,999.50</strong>
+                              </div>
+                             
+                              <div class="d-flex">
+                                <h6 style="margin-right: 265px;">Shipping Fee</h6> 
+                              <strong>&#8369;140</strong>
+                              </div>
+                             
+                              <div class="d-flex">
+                                <h6 style="margin-right: 260px;">Total Payment</h6> 
+                              <strong><u>&#8369;1,139.50</u></strong>
+                              </div>
+                           
+                              <label class="form-label">Payment Option</label>
+                              <select class="form-select">
+                                <option>Cash on Delivey</option>
+                                <option>Gcash</option>
+                                <option>Paymaya</option>
+                              </select>
+                              <br>
+                             
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" class="form-control btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirm">CONFIRM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- order confirmed -->
+                    <div class="modal" tabindex="-1" id="confirm" style="padding: 20px;">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Thank you!</h5>
+                            
+                          </div>
+                          <div class="modal-body" style="padding-left: 20px;">
+                            <p>Your order has been placed. The seller is preparing your order.</p>
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <a href="/menu/login.html"><button type="button" class="btn btn-primary">Continue shopping</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
               </div>
             </div>
         </section>
@@ -127,11 +208,10 @@
       <footer>
         <div class="row">
           <div class="col-md-4 menu2">
-            <a href="#" class="logo"><img src="" alt="logo"></a>
-            <a  href="index.html">HOME</a>
-            <a  href="#">CATEGORY</a>
-            <a  href="#">ABOUT US</a>
-            <a  href="#">CONTACT US</a>
+            <a href="/menu/login.html" class="logo"><img src="" alt="logo"></a>
+            <a  href="/menu/login.html">HOME</a>
+            <a  href="/menu/about.html">ABOUT US</a>
+            <a  href="/menu/contact.html">CONTACT US</a>
           </div>
           <div class="col-md-4 icon">
             <h6>CONTACT</h6>

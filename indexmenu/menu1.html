@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="/CSs/cart.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -12,18 +12,17 @@
     <title>GHAY ONLINE SHOP</title>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar sticky-top">
-        <div class="container-fluid" style="padding-top: 50px;">
-           
-          
+        <div class="container-fluid">
             <!-- menu -->
             <div class="row">
                 <div class="col-md-5"> 
                     <div class="menu1">
-                    <a href="/login.html" class="logo"><img src="/IMG/Snip - Layouts LOGO.com - Google Chrome-fotor-2024011216820.png" alt="logo"></a>
-                    <a class="navbar-brand" href="/login.html">HOME</a>
-                    <a class="navbar-brand" href="/abou.html">ABOUT US</a>
-                    <a class="navbar-brand" href="/contact.html">CONTACT US</a>
+                    <a href="/index.html" class="logo"><img src="/IMG/Snip - Layouts LOGO.com - Google Chrome-fotor-2024011216820.png" alt="logo"></a>
+                    <a class="navbar-brand" href="/index.html">HOME</a>
+                    <a class="navbar-brand" href="/indexmenu/menu1.html">ABOUT US</a>
+                    <a class="navbar-brand" href="/indexmenu/menu2.html">CONTACT US</a>
                 </div>
             </div>
                 <div class="col-md-5" id="search">
@@ -42,31 +41,65 @@
                     <div class="input-group-append">
                       <button class="btn btn-primary" type="button">Search</button>
                     </div>
-                    <a href="cart2.html" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <a href="#" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
                       <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
                     </svg></a>
                 </div>
             </div>
                 <div class="col-md-2">
-                    <div class="prof">
-                     
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                          Hi, DARVIN
-                        </a>
-                        <form class="dropdown-menu">
-                          <ul id="log">
-                            <li><a href="">Personal Info</a></li>
-                            <li><a href="">Inbox</a></li>
-                            <li><a href="">Account Setting</a></li>
-                            <li><a href="/index.html">Logout</a></li>
-                          </ul>
-                      </div>
+                  <div class="sign">
+              
+                    <div class="dropdown">
+                      <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        Login
+                      </a>
+                      <form class="dropdown-menu">
+                        <fieldset>
+                          <label class="form-label">USERNAME</label>
+                        <input type="email" class="form-control" placeholder="Enter Email Address">
+                        <br>
+                        <label class="form-label">PASSWORD</label>
+                        <input type="password" class="form-control" placeholder="Enter Password" required>
+                        <br><br>
+                        <a href="#"><button class="form-control btn btn-danger">Forgot password?</button></a>
+                        <br>
+                        <a href="/menu/login.html" class="form-control btn btn-primary">Login</a>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div class="dropdown" id="sign4">
+                      <a href="#" data-bs-toggle="dropdown" aria-expanded="false"> Sign Up</a>
+                        <form class="dropdown-menu" id="sign5">
+                          <fieldset>
+                            <h4 style="text-align:center">Sign up with Social Media </h4>
                     
-                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                            </svg></a>
-                       </div>
+                            
+                              <div class="socilamedia">
+                                <a href="#" class="fb btn">
+                                  <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                 </a>
+                                <a href="#" class="twitter btn">
+                                  <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                                </a>
+                                <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                                  </i> Login with Google+
+                                </a>
+                              </div>
+                           
+                              <div class="manual">
+                                <p>Or sign up manually:</p>
+                                      <input type="text" placeholder="First Name" required>
+                                      <input type="text" placeholder="Last Name" required>
+                                      <input type="email" placeholder="Email" required>
+                                      <input type="text" placeholder="Create Username" required>
+                                      <input type="password" placeholder="Create Password" required>
+                                      <input type="password" placeholder="Confirm Password" required>
+                                      <a href="#"><button class="btn btn-primary">Sign Up</button></a>
+                              </div>
+                              </div>
+                          </fieldset>
+                        </form>
+                    </div>  
                 </div>
             </div>
         </div>        
@@ -90,131 +123,25 @@
 
       <section>
         <div class="container">
-        <div class="row">
-          <div class="col-md-8" id="item1">
-            
-            <div class="col-5 darkgrey1" style="text-align: center;">
-              <img src="https://oxfordhomeware.co.uk/cdn/shop/files/Dark-Grey_1400x.jpg?v=1685620088" class="img-fluid rounded-start" alt="...">
-              
-            </div>
-            <div class="col-7 detail d-flex">
-                  <div class="col-md-6">
-                    <h5>Dark Grey Blackout Curtains</h5>
-                    <h2><span style="color: red;">&#8369;999.50</span></h2>
-                    <p>Designed with high-quality materials, these curtains <br>effectively block unwanted light, ideal for night shift workers or those seeking a darkened ambiance.</p>
-                    <h6>Color: Grey<br>Size: 46"x54"<br>Stock: 43 pcs</h6>
-                  </div>
-                  <div class="col-md-5" style="margin-top: 50px; padding: 5px; text-align: center;">
-                    <br>
-                    <form>
-                   <div class="d-block">
-                    <div class="input-group">
-                      <span class="input-group-text" id="basic-addon1"> QTY</span>
-                    <input class="form-control" type="number" id="quantity" name="quantity" min="1" max="10">
-                    </div>
-                    <br>
-                   <div class="input-group" style="height: 30px;">
-                      <span class="input-group-text" id="basic-addon1">Total &#8369;</span>
-                      <input class="form-control" type="number" id="quantity" name="quantity" min="100000" max="10">
-                      
-                    </div>
-                    <br><br>
-                    <input type="checkbox"> Select
-                    <br><br>
-                    <a href="#" class="btn btn-dark">Delete</a>
-                   </div>
-                    </form>
-                  </div> 
-            </div>
-          </div>
-          <div class="col-md-3 checkout">
-            
-              <form>
-                <legend style="font-weight: 600;">CHECKOUT</legend>
-                <br>
-                <fieldset>
-                  <div class="d-flex">
-                    <h6 style="margin-right: 84px;">1. Dark Grey Blackout Curtains (1 item)</h6> 
-                  <strong>&#8369;999.50</strong>
-                  </div>
-                  <br>
-                  <div class="d-flex">
-                    <h6 style="margin-right: 230px;">Shipping Fee</h6> 
-                  <strong>&#8369;140</strong>
-                  </div>
-                  <br>
-                  <div class="d-flex">
-                    <h6 style="margin-right: 185px;">Total Payment</h6> 
-                  <strong>&#8369;1,139.50</strong>
-                  </div>
-                  <br>
-                  <label class="form-label">Payment Option</label>
-                  <select class="form-select">
-                    <option>Cash on Delivey</option>
-                    <option>Gcash</option>
-                    <option>Paymaya</option>
-                  </select>
-                  <br>
-                  <a href="#" class="form-control btn btn-primary" data-bs-toggle="modal" data-bs-target="#payment">Place Order</a>
-                </fieldset>
-              </form>
-              <!-- confirmation of order -->
-              <div class="modal" tabindex="-1" id="payment" style="padding: 20px;">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Cash on Delivery</h5>
-                    </div>
-                    <div class="modal-body" style="padding-left: 20px;">
-                      <strong>Delivery Address:</strong><p>Darvin Pasigna
-                        (09757367195) <br>
-                        Tugbungan, Zamboanga City <br></p>
-                        <strong>Receive by:</strong> January 21-24 <br>
-                        <strong style="margin-right: 20px;">Dark Grey Blackout Curtains (1 item)</strong> <strong>&#8369;999.50</strong> <br>
-                        <strong style="margin-right: 200px;">Shipping Fee</strong> <strong>&#8369;140</strong> <br>
-                        <strong style="margin-right: 190px;">Total Payment</strong> <strong><u>&#8369;1,139.50</u></strong> 
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirm">Confirm</button>
-                    </div>
-                  </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/IMG/Snip - Tugbungan - Google Maps - Google Chrome 1.png" alt="location">
                 </div>
-              </div>
-              <!-- order confirmed -->
-              <div class="modal" tabindex="-1" id="confirm" style="padding: 20px;">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Thank you!</h5>
-                      
-                    </div>
-                    <div class="modal-body" style="padding-left: 20px;">
-                      <p>Your order has been placed. The seller is preparing your order.</p>
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <a href="/index.html"><button type="button" class="btn btn-primary">Continue shopping</button></a>
-                    </div>
-                  </div>
+                <div class="col-md-6">
+                    <h3>GHAY ONLINE SHOP</h3>
+                    <P>10 years ago, we started a sari-sari store and explored different products such as tupperware and fast food. Until the pandemic hit, we started selling online items such as bedsheets, curtains, and wedding gowns. until online sales decreased because there were many competitors. Still, we are operating our Sari-Sari store, and now we are operating our own online website. Our best sellers are curtains and wedding gowns.</P>
                 </div>
-              </div>
-
-          </div>
-        </div>
+            </div>
         </div>
       </section>
-      </div>
-          <br>     
+      <br>
       <footer>
         <div class="row">
           <div class="col-md-4 menu2">
-            <a href="#" class="logo"><img src="" alt="logo"></a>
+            <a href="#" class="logo"><img src="/IMG/Snip - Layouts LOGO.com - Google Chrome-fotor-2024011216820.png" alt="logo"></a>
             <a  href="index.html">HOME</a>
-            <a  href="#">CATEGORY</a>
-            <a  href="#">ABOUT US</a>
-            <a  href="#">CONTACT US</a>
+            <a  href="/menu/about.html">ABOUT US</a>
+            <a  href="/menu/contact.html">CONTACT US</a>
           </div>
           <div class="col-md-4 icon">
             <h6>CONTACT</h6>
@@ -271,9 +198,12 @@
             </div>
           </div>
         </div>
+       
       </footer>
       <div class="copy">
         <p>&copy; 2024 Darvin Pasigna</p>
       </div>
+      <br>
+
 </body>
 </html>
